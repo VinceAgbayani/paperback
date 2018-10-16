@@ -40,64 +40,52 @@ body{
 	font-size: 1.2em;
 }
 
+.landing-title{
+	color: white;
+	font-family: 'Raleway', serif;
+	font-size: 3em;
+}
 
-.first-block{
+.landing-content{
+	color: white;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.3em;
+	padding: 0em 4em 0em 0em;
+}
+
+.flex-container2{
 	display: flex;
+	justify-content: space-around;
+	margin: 10em 0em 0em 0em;
+}
+
+.color-mod1{
 	position: absolute;
 	background-color: #2F66A9;
 	width: 100%;
 	height: 100%;	
 }
 
-.first-block-elements h1{
-	position: relative;
-	top: 6.5em;
-	left: 6em;
-}
-
-.first-block-elements h4{
-	position: absolute;
-	top: 16em;
-	left: 6em;
-	right: 40em;
-	text-align-last: center;
-}
-
-.first-block-elements img{
-	position: absolute;
-	top: 8.5em;
-	left: 53em;
-	right: 5em;
-	font-family: Verdana;
-	color: white;
-	text-align-last: center;
-}
-
-.first-block-elements button{
-	background-color: #BACD5A;
-	border-radius: 5px;
-	font-family: Verdana;
-	padding: 1em;
-	position: relative;
-	top: 23em;
-	left: 20em;
-}
-
-.second-block{
-	display: flex;
+.color-mod2{
 	position: absolute;
 	top: 100%;
 	background-color: #E9967A;
 	width: 100%;
-	height: 100%;	
+	height: 100%;
 }
 
-.second-block h1{
-	position: relative;
-	top: 2em;
-	left: 15em;
-	font-family: Verdana;
-	color: black;
+.image-mod{
+	width: 20em;
+	height: 20em;
+}
+
+.logo-mod{
+	margin: 0em 5em 0em 0em; 
+}
+
+.desc-mod{
+	padding: 0em 0em 0em 1.3em; 
 }
 
 .book{
@@ -131,28 +119,3 @@ body{
 	font-family: Verdana;
 	position: relative;
 	top: 14.5em;
-	text-align: center;
-}
-
-.footer{
-	background-color: #BACD5A;
-	color: black;
-	font-family: Verdana;
-	position: relative;
-}
-
-.landing-title{
-	font-color: white;
-	font-family: 'Lora', serif;
-}
-
-.landing-content{
-	color: white;
-	font-family: 'Open Sans', serif;
-	font-weight: 400;
-}
-
-.flex-container2{
-	display: flex;
-	justify-content: 
-}
