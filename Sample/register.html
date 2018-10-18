@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PaperBack</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Montserrat|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+	<div class="flex-container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="Logo-white.png">
+			</div>
+			<div class="navbar-elements navbar-elements-mod">
+				<ul>
+					<li><a href="search.html">Browse</a></li>
+					<li><a href="library.html">Your Library</a></li>
+					<li><a href="landing.html">Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="color-mod5">
+		<div class="flex-container3">
+			<div class="signup-mod">
+				<h2 class="signup-title">Nice to meet you! Let's get you ready.</h2>
+				<div class="signup-content">
+					<label for="fname">First Name:</label><br>
+					<input type="text" name="fname" required><br>
+					<label for="lname">Last Name:</label><br>
+					<input type="text" name="lname" required>
+					<label for="email">Email: </label><br>
+					<input type="text" name="email" required>
+					<label for="uname">Username:</label><br>
+					<input type="text" name="uname" required><br>
+					<label for="pass">Password:</label><br>
+					<input type="password" name="pass" required>
+					<a href="#login-popup""><button type="submit">Sign Up</button></a>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div id="login-popup" class="overlay">
+		<div class="popup">
+			<h2>Log In</h2>
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<label for="uname">Username:</label><br>
+				<input type="text" name="uname" required><br><br>
+				<label for="pass">Password:</label><br>
+				<input type="password" name="pass" required>
+				<a href="search.html"><button type="submit">Login</button></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	padding: 0;
+	padding: 0
 }
 
 .flex-container{
@@ -10,6 +10,7 @@ body{
 	justify-content: space-around;
 }
 
+/* Navigation Bar */
 .navbar{
 	width: 100%;
 	font-size: 1em;
@@ -19,13 +20,12 @@ body{
 }
 
 .logo img{
-	width: 2.5em;
+	width: 8.5em;
 	height: 2.5em;
 	position: absolute;
-	top: .75em;	
+	top: .55em;	
 	left: 5em;
 	float: left;
-	border-style: solid;
 }
 
 .navbar-elements ul li{
@@ -37,7 +37,17 @@ body{
 	position: relative;
 	left: 45em;
 	font-weight: 600;
-	font-size: 1.2em;
+	font-size: 1.05em;
+}
+
+.navbar-elements a:link{
+	color: white;
+	text-decoration: none;
+}
+
+.navbar-elements a:visited{
+	color: white;
+	text-decoration: none;
 }
 
 .landing-title{
@@ -85,37 +95,327 @@ body{
 }
 
 .desc-mod{
-	padding: 0em 0em 0em 1.3em; 
+	padding: 0em 0em 0em 3em; 
+}
+
+.desc-mod .button a:link{
+	color: black;
+	text-decoration: none;
+}
+
+.desc-mod .button a:visited{
+	color: black;
+	text-decoration: none;
+}
+
+.button{
+	background-color: #F0E68C;
+	border-style: none;
+	padding: 1em 2em;
+	text-align: center; 
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.flex-container3{
+	display: flex;
+	justify-content: space-around;
+	margin: 5em 0em 0em 0em;
+}
+
+.h1{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.book-mod{
+	padding: 0em 0em 0em 3em;
+	
 }
 
 .book{
-	position: absolute;
-	top: 11em;
-	left: 3em;
-	width: 15em;
+	display: inline-block;
+	width: 12em;
 	height: 20em;
-	padding-left: 1em;
-	padding-right: 1em; 
+	padding-left: 2em; 
+	padding-top: 1.3em;
 }
 
-.book img{
+.cover-mod{
 	width: 10em;
 	height: 13em;
-	position: absolute;
-	left: 3.5em;
-    box-shadow: 8px 10px 8px #696969;
+	box-shadow: 10px 8px 18px #696969;
 }
 
-.book h3{
-	color: black;
-	font-family: Verdana;
+.book-def{
+	font-family: 'Raleway', serif;
+	margin: 0;
+	padding: 0.5em 0em 0em 0.5em;
+}
+
+.book-author{
+	font-family: 'Merriweather Sans', serif;
+	margin: 0;
+	padding: 0.5em 0em 0em 0.5em;
+}
+
+.book-author h5{
+	padding: 0;
+	margin: 0;
+}
+
+/* For hover star ratings */
+.star-rating__wrap{
+	display: inline-block;
+	font-size: 1rem;
+	padding: 0.5em;
+}
+.star-rating__wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.star-rating__ico{
+	float: right;
+	padding-left: 2px;
+	cursor: pointer;
+	color: #000000;
+}
+.star-rating__ico:last-child{
+	padding-left: 0;
+}
+.star-rating__input{
+	display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+	content: "\f005";
+}
+
+/* For static star ratings */
+.star-rating{
+	margin-left: 0.5em;
+	padding-top: 0.5em;
+}
+
+.checked{
+	color: #D3D3D3;
+	border-color: black; 
+}
+
+.color-mod3{
+	position: absolute;
+	top: 200%;
+	background-color: #BACD5A;
+	width: 100%;
+	height: 100%;
+}
+
+.feature-mod{
+	padding: 0em 0em 0em 10em;
+	
+}
+
+.feature{
+	display: inline-block;
+	width: 15em;
+	height: 20em;
+	padding-left: 4em; 
+	padding-top: 1.3em;	
+}
+
+.icon-mod{
+	width: 6em;
+	height: 6em;
+	padding-left: 2.5em;
+}
+
+.feature-def{
+	font-family: 'Raleway', serif;
+	margin: 0;
+	padding: 1em 0em 0em 1.25em;
+}
+
+.add-desc{
+	font-family: 'Merriweather Sans', serif;
+	margin: 0;
+	padding: 1em 0em 0em 0em;
+}
+
+.flex-container4{
+	display: flex;
+	justify-content: space-around;
+	margin: 2em 0em 0em 0em;
+}
+
+/* Login Pop-Up */
+.overlay{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target{
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup{
+	margin-top: 8em;
+	margin-left: 35%;
+	padding: 2em;
+	background-color: white;
+	border-radius: 1em;
+	width: 25%;
 	position: relative;
-	top: 11em;
+	transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}	
+
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: .75em .75em;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.popup .content label{
+	text-align: center; 
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+.popup .content button{
+	background-color: #F0E68C;
+	border-style: none;
+	margin-top: 2em;
+	margin-left: 35%;
+	padding: 1em 2em;
+	text-align: center; 
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/* Sign Up */
+.signup-mod{
+	margin: 0em 10em 3em 10em;
+}
+
+.signup-title{
+	color: white;
+	font-family: 'Raleway', serif;
 	text-align: center;
 }
 
-.book h5{
-	color: black;
-	font-family: Verdana;
-	position: relative;
-	top: 14.5em;
+.signup-content{
+	color: white;
+	font-family: 'Merriweather Sans', sans-serif;
+	padding: 0em 2em 0em 0em;
+}
+
+.signup-content button{
+	background-color: #F0E68C;
+	border-style: none;
+	margin-top: 1em;
+	margin-left: 35%;
+	padding: 1em 2em;
+	text-align: center; 
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+.signup-content label{
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: .90em;
+}
+
+.color-mod5{
+	position: absolute;
+	top: 0;
+	background-color: #2F66A9;
+	width: 100%;
+	height: 110%;
+}
+
+.color-mod6{
+	position: absolute;
+	top: 0;
+	background-color: #E9967A;
+	width: 100%;
+	height: 110%;
+}
+
+.color-mod7{
+	position: absolute;
+	top: 0;
+	background-color: #BACD5A;
+	width: 100%;
+	height: 110%;
+}
+
+.book-mod input{
+	width: 20%
+}
+
+.category{
+	border-style: solid;
+	width: 10%;
+	height: 40%;
+	margin: 2em;
+	padding-left: 2em;
+	float: left;
+}
+
+.button1{
+	margin-left: 1em;	
+	background-color: #F0E68C;
+	border-style: none;
+	padding: 1em;
+	text-align: center; 
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	justify-content: space-around;
+}
+
+.footer{
+	position: absolute;
+	top: 300%;
+	background-color: #46575f;
+	color: white;
+	width: 100%;
+	height: 15%;
+	font-family: 'Montserrat', sans-serif; 
+	font-weight: bold;
+}

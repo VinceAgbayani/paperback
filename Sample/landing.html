@@ -2,64 +2,145 @@
 <html>
 <head>
 	<title>PaperBack</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style2.css">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Montserrat|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 	<div class="flex-container">
 		<div class="navbar">
 			<div class="logo">
-				<img src="hello.jpg">
+				<img src="Logo-white.png">
 			</div>
 			<div class="navbar-elements navbar-elements-mod">
 				<ul>
-					<li>Home</li>
-					<li>Explore</li>
-					<li>Log In</li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#explore">Explore</a></li>
+					<li><a href="#about">Features</a></li>
+					<li><a href="#login-popup">Log In</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div class="color-mod1">
-		<div class="flex-container2">
+	<div class="color-mod1" id="home">
+		<div class="flex-container2" >
 			<div class="desc-mod">
-				<h1 class="landing-title">Some Awesome Title</h1>
-				<h1 class="landing-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, nisi sit amet elementum efficitur, lacus urna varius tortor, at egestas nisi lectus id nulla. Sed ultricies aliquet odio at dignissim.</h1>	
+				<h1 class="landing-title">Take your dreams off the shelf</h1>
+				<h1 class="landing-content">Push your imagination to the limit and find the books you love in Paperback.</h1>	
+				<a href="register.html"><button class="button">Get Started</button></a>
 			</div>
 			<div class="logo-mod">
-				<img src="hello.jpg" class="image-mod">
+				<img src="flogo.png" class="image-mod">
 			</div>
 		</div>	
 	</div>
 
-	<div class="color-mod2">
-		<h1>FEATURED BOOK</h1>
-		<div class="flex-container2">
+	<div class="color-mod2" id="explore">
+		<div class="flex-container3">
+			<h1 class="h1">EXPLORE BOOKS</h1>
+		</div>
+		<div class="book-mod">
 			<div class="book">
-				<img src="cover.jpg">
-				<h3>Animals without Backbones</h3>
-				<h5>Ralph Buchsbaum</h5>
+				<img src="cover.jpg" class="cover-mod">
+				<h3 class="book-def">Animals Without Backbones</h3>
+				<h5 class="book-author">Ralph Buchsaum</h5>
+				<div class="star-rating">
+					<span class="fa fa-star default"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star checked"></span>
+				</div>
 			</div>
 			<div class="book">
-				<img src="cover.jpg">
-				<h3>Animals without Backbones</h3>
-				<h5>Ralph Buchsbaum</h5>
+				<img src="cover.jpg" class="cover-mod">
+				<h3 class="book-def">Animals Without Backbones</h3>
+				<h5 class="book-author">Ralph Buchsaum</h5>
+				<div class="star-rating">
+					<span class="fa fa-star default"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star checked"></span>
+				</div>
 			</div>
 			<div class="book">
-				<img src="cover.jpg">
-				<h3>Animals without Backbones</h3>
-				<h5>Ralph Buchsbaum</h5>
+				<img src="cover.jpg" class="cover-mod">
+				<h3 class="book-def">Animals Without Backbones</h3>
+				<h5 class="book-author">Ralph Buchsaum</h5>
+				<div class="star-rating">
+					<span class="fa fa-star default"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star checked"></span>
+				</div>
 			</div>
 			<div class="book">
-				<img src="cover.jpg">
-				<h3>Animals without Backbones</h3>
-				<h5>Ralph Buchsbaum</h5>
+				<img src="cover.jpg" class="cover-mod">
+				<h3 class="book-def">Animals Without Backbones</h3>
+				<h5 class="book-author">Ralph Buchsaum</h5>
+				<div class="star-rating">
+					<span class="fa fa-star default"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star checked"></span>
+				</div>
 			</div>
-				
+			<div class="book">
+				<img src="cover.jpg" class="cover-mod">
+				<h3 class="book-def">Animals Without Backbones</h3>
+				<h5 class="book-author">Ralph Buchsaum</h5>
+				<div class="star-rating">
+					<span class="fa fa-star default"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star checked"></span>
+				</div>
 			</div>
+		</div>	
 	</div>
-
+	<div class="color-mod3" id="about">
+		<div class="flex-container3">
+			<h1 class="h1">FEATURES</h1>
+		</div>
+		<div class="feature-mod">
+			<div class="feature">
+				<img src="notebook.png" class="icon-mod">
+				<h3 class="feature-def">Search e-Books</h3>
+				<p class="add-desc">Find books suitable for your needs</p>
+			</div>
+			<div class="feature">
+				<img src="bookshelf.png" class="icon-mod">
+				<h3 class="feature-def">Create Library</h3>
+				<p class="add-desc">Personalize and stack your own library</p>
+			</div>
+			<div class="feature">
+				<img src="book.png" class="icon-mod">
+				<h3 class="feature-def">Review and Rate</h3>
+				<p class="add-desc">Read and share opinions about books you have read</p>
+			</div>
+		</div>
+	</div>
+	<div id="login-popup" class="overlay">
+		<div class="popup">
+			<h2>Log In</h2>
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<label for="uname">Username:</label><br>
+				<input type="text" name="uname" required><br><br>
+				<label for="pass">Password:</label><br>
+				<input type="password" name="pass" required>
+				<a href="search.html"><button type="submit">Login</button></a>
+			</div>
+		</div>
+	</div>
 	<div class="footer">
-		Copyright 2018
+		<div class="flex-container4">
+			Copyright &copy; 2018
+		</div>
 	</div>
 </body>
 </html>
